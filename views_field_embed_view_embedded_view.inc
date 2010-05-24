@@ -34,3 +34,4 @@ class views_field_embed_view_embedded_view extends views_handler_field {
   function render_html($values) {
 
   }
+}
