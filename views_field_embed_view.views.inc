@@ -6,7 +6,21 @@ function views_field_embed_view_views_handlers() {
       'path' => drupal_get_path('module', 'views_field_embed_view'),
     ),
     'handlers' => array(
-      'views_field_embed_view_embedded_view' => t('Embed another view as a field'))
+      'views_field_embed_view_embedded_view' => => array(
+        'parent' => 'views_handler_field')
     )
   );
 }
+
+
+function views_field_embed_view_views_data() {
+  
+  $data['customfield']['embed_view'] = array(
+    'title' => t('Embed view'),
+    'help' => t('Embed a view'),
+    'field' => array(
+      'handler' => 'views_field_embed_view_embedded_view',
+      'click sortable' => FALSE,
+      'notafield' => FALSE,
+    ),
+  );
