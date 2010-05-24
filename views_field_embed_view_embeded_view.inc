@@ -25,11 +25,7 @@ class views_field_embed_view_embedded_view extends views_handler_field {
    * Return field html if the result is an image node.
    */
   function render($values) {
-		echo '<pre>';
-		var_dump($values);
-		var_dump($this->view);
-		die();
-		views_embed_view();
+
   }
 
   /**
