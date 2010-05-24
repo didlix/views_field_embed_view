@@ -5,4 +5,5 @@ function views_field_embed_views_api() {
     'api' => 2,
     'path' => drupal_get_path('module', 'views_field_embed_view'),
   );
+die('views_field_embed_views_api');
 }
