@@ -20,16 +20,12 @@ function views_field_embed_view_views_data() {
     '#global' => array(),
   );
 
-  $data['embed_view_field']['embed_view'] = array(
-    'title' => t('Embed view'),
-    'help' => t('Embed a view'),
-    'field' => array(
-      'handler' => 'views_field_embed_view_embedded_view',
-      'click sortable' => FALSE,
-      'notafield' => TRUE,
-    ),
-  );
+  return $data;
 
-	return $data;
+}
 
+function views_field_embed_view_views_data_alter(&$data) {
+	echo '<pre>';
+var_dump($data); die();
+	
 }
