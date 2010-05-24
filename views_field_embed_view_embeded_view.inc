@@ -11,21 +11,7 @@
  * Inherit from views_handler_field_node so we get the 'link to node' stuff for
  * free.
  */
-class views_field_embed_view_embedded_view extends views_handler_field_node {
-
-  /**
-   * Constructor to provide additional fields to add.
-   *
-   * Adds the fields that image_load() will need.
-   */
-  function construct() {
-    parent::construct();
-
-    $this->additional_fields['a_field'] = array(
-      'table' => 'node',
-      'field' => 'tid',
-    );
-  }
+class views_field_embed_view_embedded_view extends views_handler_field {
 
   /**
    * query() override to not query this fake field.
