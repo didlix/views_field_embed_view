@@ -11,7 +11,7 @@
  * Inherit from views_handler_field_node so we get the 'link to node' stuff for
  * free.
  */
-class views_field_embed_view_embedded_view extends views_handler_field_node {
+class views_field_embed_view_embedded_view extends views_handler_field {
 
   /**
    * query() override to not query this fake field.
