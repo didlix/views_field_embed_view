@@ -16,8 +16,7 @@ class views_field_embed_view_embedded_view extends views_handler_field {
 
   function construct() {
     parent::construct();
-	echo '<pre>';	var_dump($this->view); echo '</pre>';
-	die();
+
 
   }
 
@@ -32,7 +31,8 @@ class views_field_embed_view_embedded_view extends views_handler_field {
    * Return field html if the result is an image node.
    */
   function render($values) {
-
+	echo '<pre>';	var_dump($this->view); echo '</pre>';
+	die();
   }
 
   /**
