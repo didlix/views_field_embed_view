@@ -15,13 +15,18 @@ function views_field_embed_view_views_handlers() {
 
 function views_field_embed_view_views_data() {
   
-  $data['customfield']['embed_view'] = array(
+  $data['embed_view_field']['table']['group'] = t('Field embed view');
+  $data['embed_view_field']['table']['join'] = array(
+    '#global' => array(),
+  );
+
+  $data['embed_view_field']['embed_view'] = array(
     'title' => t('Embed view'),
     'help' => t('Embed a view'),
     'field' => array(
       'handler' => 'views_field_embed_view_embedded_view',
       'click sortable' => FALSE,
-      'notafield' => FALSE,
+      'notafield' => TRUE,
     ),
   );
 
