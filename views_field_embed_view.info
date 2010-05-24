@@ -1,0 +1,5 @@
+name = Views field embed view
+description = Embed a view as a field in a view
+package = Views
+dependencies[] = views
+core = 6.x
