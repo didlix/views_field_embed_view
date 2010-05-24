@@ -6,7 +6,7 @@ function views_field_embed_view_views_handlers() {
       'path' => drupal_get_path('module', 'views_field_embed_view'),
     ),
     'handlers' => array(
-      'views_field_embed_view_embedded_view' => => array(
+      'views_field_embed_view_embedded_view' => array(
         'parent' => 'views_handler_field')
     )
   );
