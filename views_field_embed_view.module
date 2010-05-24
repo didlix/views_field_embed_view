@@ -1,8 +1,7 @@
 <?php
 
-function views_catalog_views_api() {
+function views_field_embed_views_api() {
   return array(
     'api' => 2,
     'path' => drupal_get_path('module', 'views_field_embed_view'),
   );
-}
