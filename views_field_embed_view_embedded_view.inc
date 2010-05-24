@@ -17,6 +17,11 @@ class views_field_embed_view_embedded_view extends views_handler_field {
    * query() override to not query this fake field.
    */
   function query() {
+	
+	echo '<pre>';
+	var_dump($this->view);
+	die;
+	
     $this->ensure_my_table();
     $this->add_additional_fields();
   }
