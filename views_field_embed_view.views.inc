@@ -24,3 +24,7 @@ function views_field_embed_view_views_data() {
       'notafield' => FALSE,
     ),
   );
+
+	return $data;
+
+}
