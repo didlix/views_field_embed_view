@@ -13,11 +13,18 @@
  */
 class views_field_embed_view_embedded_view extends views_handler_field {
 
+
+  function construct() {
+    parent::construct();
+	echo '<pre>';	var_dump($this->view); echo '</pre>';
+	die();
+
+  }
+
   /**
    * query() override to not query this fake field.
    */
   function query() {	
-echo '<pre>';	var_dump($this->view); echo '</pre>';
     $this->ensure_my_table();
   }
 
